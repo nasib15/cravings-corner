@@ -1,5 +1,11 @@
 /* eslint-disable react/prop-types */
-const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
+const Cooking = ({
+  cookings,
+  handleCurrentlyCooking,
+  currentlyCooking,
+  totalCalories,
+  totalTime,
+}) => {
   return (
     <div className="border rounded-2xl pt-8 pb-20">
       <h2 className="text-4xl text-center mx-auto">
@@ -9,7 +15,7 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="text-center">
             <tr>
               <th></th>
               <th>Name</th>
@@ -18,7 +24,7 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
             </tr>
           </thead>
           {cookings.map((cooking, index) => (
-            <tbody key={index}>
+            <tbody key={index} className="text-center">
               {/* row 1 */}
               <tr className="bg-base-200">
                 <th>{index + 1}</th>
@@ -27,7 +33,9 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
                 <td>{cooking.calories}</td>
                 <td>
                   <button
-                    onClick={() => handleCurrentlyCooking(cooking)}
+                    onClick={() =>
+                      handleCurrentlyCooking(cooking, cooking.recipe_id)
+                    }
                     className="btn bg-[#0BE58A]"
                   >
                     Preparing
@@ -45,7 +53,7 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="text-center">
             <tr>
               <th></th>
               <th>Name</th>
@@ -54,7 +62,7 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
             </tr>
           </thead>
           {currentlyCooking.map((cooking, index) => (
-            <tbody key={index}>
+            <tbody className="text-center" key={index}>
               {/* row 1 */}
               <tr className="bg-base-200">
                 <th>{index + 1}</th>
@@ -68,8 +76,16 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
             <tr>
               <td></td>
               <td></td>
-              <td>Total Time= 45 Minutes</td>
-              <td>Total Calories= 600 Calories</td>
+              <td>
+                Total Time=
+                <br />
+                {totalTime}
+                Minutes
+              </td>
+              <td>
+                Total Calories= <br />
+                {totalCalories} Calories
+              </td>
             </tr>
           </tfoot>
         </table>

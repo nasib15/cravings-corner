@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
 import Cooking from "./../Cooking/Cooking";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -9,6 +11,9 @@ const Recipes = () => {
   const [cookings, setCookings] = useState([]);
 
   const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   useEffect(() => {
     fetch("./recipes.json")
@@ -23,18 +28,27 @@ const Recipes = () => {
     if (!isExist) {
       const newCookings = [...cookings, recipe];
       setCookings(newCookings);
+    } else {
+      toast.warning("Already added to cookings");
     }
   };
 
-  const handleCurrentlyCooking = (cooking) => {
+  const handleCurrentlyCooking = (cooking, recipe_id) => {
     const isExist = currentlyCooking.find(
       (currentCooking) => cooking.recipe_id === currentCooking.recipe_id
     );
+
+    setCookings(cookings.filter((cooking) => cooking.recipe_id !== recipe_id));
+
     if (!isExist) {
       const newCurrentlyCookings = [...currentlyCooking, cooking];
       setCurrentlyCooking(newCurrentlyCookings);
     }
+    setTotalTime(totalTime + parseInt(cooking.prep_time.split(" ")[0]));
+    setTotalCalories(totalCalories + cooking.calories);
   };
+
+  // console.log(totalTime);
 
   return (
     <div className="my-24">
@@ -68,9 +82,12 @@ const Recipes = () => {
             cookings={cookings}
             handleCurrentlyCooking={handleCurrentlyCooking}
             currentlyCooking={currentlyCooking}
+            totalTime={totalTime}
+            totalCalories={totalCalories}
           ></Cooking>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
