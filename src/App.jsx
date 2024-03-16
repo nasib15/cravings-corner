@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
+import Recipes from "./components/Recipes/Recipes";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         </nav>
         <Banner></Banner>
       </header>
+      <Recipes></Recipes>
     </div>
   );
 }

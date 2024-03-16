@@ -1,0 +1,103 @@
+[
+  {
+    "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-484646_11-7ee0a8a.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Honey Garlic Chicken Stir-fry",
+    "description": "Flavorful chicken stir-fry with a sweet and savory glaze.",
+    "ingredients": [
+      "1 lb boneless, skinless chicken breasts, cut into bite-sized pieces",
+      "2 tablespoons cornstarch",
+      "1/4 cup soy sauce",
+      "1/4 cup honey",
+      "2 tablespoons rice vinegar",
+      "1 teaspoon grated ginger",
+      "2 tablespoons vegetable oil"
+    ],
+    "prep_time": "30 min",
+    "calories": 350
+  },
+  {
+    "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/vegetarian-tikka-masala.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Vegetarian Tikka Masala",
+    "description": "Creamy, flavorful Indian curry with paneer cheese.",
+    "ingredients": [
+      "1 tablespoon vegetable oil",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1-inch piece ginger, grated",
+      "1 (14 oz) can diced tomatoes",
+      "1 teaspoon garam masala"
+    ],
+    "prep_time": "35 min",
+    "calories": 480
+  },
+  {
+    "image": "https://thecozycook.com/wp-content/uploads/2023/01/Classic-Italian-Pasta-Salad-f.jpg",
+    "recipe_id": 3,
+    "recipe_name": "Classic Italian Pasta Salad",
+    "description": "Colorful, refreshing pasta salad perfect for picnics or potlucks.",
+    "ingredients": [
+      "12 oz rotini pasta, cooked",
+      "1/2 cup sliced black olives",
+      "1/2 cup chopped bell pepper (any color)",
+      "1/2 cup chopped cucumber",
+      "4 oz pepperoni, sliced",
+      "4 oz mozzarella cheese, cubed",
+      "1/2 cup bottled Italian dressing"
+    ],
+    "prep_time": "20 min",
+    "calories": 380
+  },
+  {
+    "image": "https://littlesunnykitchen.com/wp-content/uploads/2022/06/Shrimp-Tacos-7.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Spicy Shrimp Tacos",
+    "description": "Quick and easy tacos with a zesty kick.",
+    "ingredients": [
+      "1 lb shrimp, peeled and deveined",
+      "1 tablespoon olive oil",
+      "1 teaspoon chili powder",
+      "1/4 teaspoon salt",
+      "8 small corn tortillas",
+      "Your favorite taco toppings (e.g., shredded cabbage, avocado, salsa)"
+    ],
+    "prep_time": "25 min",
+    "calories": 320
+  },
+  {
+    "image": "https://www.errenskitchen.com/wp-content/uploads/2015/08/One-Pot-Creamy-Garlic-Parmesan-Mushroom-Pasta-www.errenskitchen.com-3.jpg",
+    "recipe_id": 5,
+    "recipe_name": "Creamy Mushroom Pasta",
+    "description": "Rich, comforting pasta dish with garlicky mushrooms.",
+    "ingredients": [
+      "8 oz pasta",
+      "1 tablespoon olive oil",
+      "8 oz mushrooms, sliced",
+      "2 cloves garlic, minced",
+      "1/2 cup heavy cream",
+      "1/4 cup grated parmesan cheese"
+    ],
+    "prep_time": "20 min",
+    "calories": 450
+  },
+  {
+    "image": "https://www.lifeloveandsugar.com/wp-content/uploads/2021/03/Best-Chocolate-Chip-Cookies-1.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Classic Chocolate Chip Cookies",
+    "description": "The perfect chewy chocolate chip cookie.",
+    "ingredients": [
+      "1 cup (2 sticks) unsalted butter, softened",
+      "3/4 cup sugar",
+      "3/4 cup packed brown sugar",
+      "2 eggs",
+      "2 teaspoons vanilla extract",
+      "2 1/4 cup flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "1 1/2 cups chocolate chips"
+    ],
+    "prep_time": "40 min",
+    "calories": 180
+  }
+]
