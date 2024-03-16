@@ -3,12 +3,14 @@ import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineFire } from "react-icons/ai";
 
 const Recipe = ({
+  recipe,
   image,
   recipe_name,
   description,
   ingredients,
   prep_time,
   calories,
+  handleCooking,
 }) => {
   return (
     <div className="card bg-base-100 border">
@@ -35,7 +37,12 @@ const Recipe = ({
           <p>{calories} Calories</p>
         </div>
         <div className="card-actions mt-4">
-          <button className="btn bg-[#0BE58A]">Want to Cook</button>
+          <button
+            onClick={() => handleCooking(recipe)}
+            className="btn bg-[#0BE58A]"
+          >
+            Want to Cook
+          </button>
         </div>
       </div>
     </div>

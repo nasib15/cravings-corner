@@ -6,11 +6,19 @@ import Cooking from "./../Cooking/Cooking";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
 
+  const [cookings, setCookings] = useState([]);
+
   useEffect(() => {
     fetch("./recipes.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
+
+  const handleCooking = (recipe) => {
+    const newCooking = [...cookings, recipe];
+    setCookings(newCooking);
+  };
+  console.log(cookings);
 
   return (
     <div className="my-24">
@@ -27,17 +35,20 @@ const Recipes = () => {
           {recipes.map((recipe, index) => (
             <Recipe
               key={index}
+              recipe={recipe}
+              recipeID={recipe.recipe_id}
               image={recipe.image}
               recipe_name={recipe.recipe_name}
               description={recipe.description}
               ingredients={recipe.ingredients}
               prep_time={recipe.prep_time}
               calories={recipe.calories}
+              handleCooking={handleCooking}
             ></Recipe>
           ))}
         </div>
         <div className="w-[35%]">
-          <Cooking></Cooking>
+          <Cooking cookings={cookings}></Cooking>
         </div>
       </div>
     </div>

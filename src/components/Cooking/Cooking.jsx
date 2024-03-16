@@ -1,7 +1,10 @@
-const Cooking = () => {
+/* eslint-disable react/prop-types */
+const Cooking = ({ cookings }) => {
   return (
     <div className="border rounded-2xl pt-8 pb-20">
-      <h2 className="text-4xl text-center mx-auto">Want To Cook: 0</h2>
+      <h2 className="text-4xl text-center mx-auto">
+        Want To Cook: {cookings.length}
+      </h2>
       <div className="divider"></div>
       <div className="overflow-x-auto">
         <table className="table">
@@ -14,18 +17,20 @@ const Cooking = () => {
               <th>Calories</th>
             </tr>
           </thead>
-          <tbody>
-            {/* row 1 */}
-            <tr className="bg-base-200">
-              <th>1</th>
-              <td>Cy Ganderton</td>
-              <td>Quality Control Specialist</td>
-              <td>Blue</td>
-              <td>
-                <button className="btn bg-[#0BE58A]">Preparing</button>
-              </td>
-            </tr>
-          </tbody>
+          {cookings.map((cooking, index) => (
+            <tbody key={index}>
+              {/* row 1 */}
+              <tr className="bg-base-200">
+                <th>{index + 1}</th>
+                <td>{cooking.recipe_name}</td>
+                <td>{cooking.prep_time}</td>
+                <td>{cooking.calories}</td>
+                <td>
+                  <button className="btn bg-[#0BE58A]">Preparing</button>
+                </td>
+              </tr>
+            </tbody>
+          ))}
         </table>
       </div>
       <h2 className="text-4xl text-center mx-auto pt-8">
