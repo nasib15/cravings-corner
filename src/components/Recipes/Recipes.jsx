@@ -55,9 +55,11 @@ const Recipes = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold">Our Recipes</h2>
         <p className="opacity-80 mt-6 mb-12">
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-          vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-          elementum mauris aenean neque.
+          From appetizers to desserts, each recipe is expertly crafted with
+          detailed instructions, ingredient lists, and pro tips to ensure
+          culinary success. Discover inspiration for every meal and occasion
+          with our diverse range of dishes catered to various tastes and dietary
+          preferences.
         </p>
       </div>
       <div className="recipe-section-container flex gap-6">
