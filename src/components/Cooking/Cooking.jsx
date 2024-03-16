@@ -64,12 +64,14 @@ const Cooking = ({ cookings, handleCurrentlyCooking, currentlyCooking }) => {
               </tr>
             </tbody>
           ))}
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Total Time= 45 Minutes</td>
-            <td>Total Calories= 600 Calories</td>
-          </tr>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total Time= 45 Minutes</td>
+              <td>Total Calories= 600 Calories</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>

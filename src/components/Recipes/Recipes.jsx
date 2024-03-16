@@ -17,13 +17,23 @@ const Recipes = () => {
   }, []);
 
   const handleCooking = (recipe) => {
-    const newCooking = [...cookings, recipe];
-    setCookings(newCooking);
+    const isExist = cookings.find(
+      (cooking) => cooking.recipe_id === recipe.recipe_id
+    );
+    if (!isExist) {
+      const newCookings = [...cookings, recipe];
+      setCookings(newCookings);
+    }
   };
 
   const handleCurrentlyCooking = (cooking) => {
-    const newCurrentlyCooking = [...currentlyCooking, cooking];
-    setCurrentlyCooking(newCurrentlyCooking);
+    const isExist = currentlyCooking.find(
+      (currentCooking) => cooking.recipe_id === currentCooking.recipe_id
+    );
+    if (!isExist) {
+      const newCurrentlyCookings = [...currentlyCooking, cooking];
+      setCurrentlyCooking(newCurrentlyCookings);
+    }
   };
 
   return (
