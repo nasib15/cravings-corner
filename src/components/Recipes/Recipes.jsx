@@ -8,6 +8,8 @@ const Recipes = () => {
 
   const [cookings, setCookings] = useState([]);
 
+  const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
   useEffect(() => {
     fetch("./recipes.json")
       .then((res) => res.json())
@@ -18,7 +20,11 @@ const Recipes = () => {
     const newCooking = [...cookings, recipe];
     setCookings(newCooking);
   };
-  console.log(cookings);
+
+  const handleCurrentlyCooking = (cooking) => {
+    const newCurrentlyCooking = [...currentlyCooking, cooking];
+    setCurrentlyCooking(newCurrentlyCooking);
+  };
 
   return (
     <div className="my-24">
@@ -48,7 +54,11 @@ const Recipes = () => {
           ))}
         </div>
         <div className="w-[35%]">
-          <Cooking cookings={cookings}></Cooking>
+          <Cooking
+            cookings={cookings}
+            handleCurrentlyCooking={handleCurrentlyCooking}
+            currentlyCooking={currentlyCooking}
+          ></Cooking>
         </div>
       </div>
     </div>
