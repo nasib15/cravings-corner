@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-484646_11-7ee0a8a.jpg",
+    "image": "https://i.ibb.co/X4mW1rz/chicken-leg-with-baked-cauliflower-parsley.jpg",
     "recipe_id": 1,
     "recipe_name": "Honey Garlic Chicken Stir-fry",
     "description": "Flavorful chicken stir-fry with a sweet and savory glaze.",
@@ -13,27 +13,27 @@
       "1 teaspoon grated ginger",
       "2 tablespoons vegetable oil"
     ],
-    "prep_time": "30 min",
+    "prep_time": "30 Minutes",
     "calories": 350
   },
   {
-    "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/vegetarian-tikka-masala.jpg",
+    "image": "https://i.ibb.co/g3dfHkt/front-view-meat-sauce-soup-with-greens-potatoes-dark-desk-soup-meal-sauce-meat.jpg",
     "recipe_id": 2,
     "recipe_name": "Vegetarian Tikka Masala",
     "description": "Creamy, flavorful Indian curry with paneer cheese.",
     "ingredients": [
       "1 tablespoon vegetable oil",
       "1 onion, chopped",
-      "3 cloves garlic, minced",
+      "3 cloves garlic, Minutesced",
       "1-inch piece ginger, grated",
       "1 (14 oz) can diced tomatoes",
       "1 teaspoon garam masala"
     ],
-    "prep_time": "35 min",
+    "prep_time": "35 Minutes",
     "calories": 480
   },
   {
-    "image": "https://thecozycook.com/wp-content/uploads/2023/01/Classic-Italian-Pasta-Salad-f.jpg",
+    "image": "https://i.ibb.co/MPtLMYj/pasta-colored-farfalle-salad-with-tomatoes-mozzarella-basil.jpg",
     "recipe_id": 3,
     "recipe_name": "Classic Italian Pasta Salad",
     "description": "Colorful, refreshing pasta salad perfect for picnics or potlucks.",
@@ -46,11 +46,11 @@
       "4 oz mozzarella cheese, cubed",
       "1/2 cup bottled Italian dressing"
     ],
-    "prep_time": "20 min",
+    "prep_time": "20 Minutes",
     "calories": 380
   },
   {
-    "image": "https://littlesunnykitchen.com/wp-content/uploads/2022/06/Shrimp-Tacos-7.jpg",
+    "image": "https://i.ibb.co/0M2BJNV/top-view-tacos-with-shrimps.jpg",
     "recipe_id": 4,
     "recipe_name": "Spicy Shrimp Tacos",
     "description": "Quick and easy tacos with a zesty kick.",
@@ -62,11 +62,11 @@
       "8 small corn tortillas",
       "Your favorite taco toppings (e.g., shredded cabbage, avocado, salsa)"
     ],
-    "prep_time": "25 min",
+    "prep_time": "25 Minutes",
     "calories": 320
   },
   {
-    "image": "https://www.errenskitchen.com/wp-content/uploads/2015/08/One-Pot-Creamy-Garlic-Parmesan-Mushroom-Pasta-www.errenskitchen.com-3.jpg",
+    "image": "https://i.ibb.co/6nncYXC/vegetarian-dish-with-tagliatelle-mushrooms.jpg",
     "recipe_id": 5,
     "recipe_name": "Creamy Mushroom Pasta",
     "description": "Rich, comforting pasta dish with garlicky mushrooms.",
@@ -74,15 +74,14 @@
       "8 oz pasta",
       "1 tablespoon olive oil",
       "8 oz mushrooms, sliced",
-      "2 cloves garlic, minced",
-      "1/2 cup heavy cream",
+      "2 cloves garlic, Minutesced",
       "1/4 cup grated parmesan cheese"
     ],
-    "prep_time": "20 min",
+    "prep_time": "20 Minutes",
     "calories": 450
   },
   {
-    "image": "https://www.lifeloveandsugar.com/wp-content/uploads/2021/03/Best-Chocolate-Chip-Cookies-1.jpg",
+    "image": "https://i.ibb.co/yywdvX0/top-view-cookies-chocolate-chips-bowl.jpg",
     "recipe_id": 6,
     "recipe_name": "Classic Chocolate Chip Cookies",
     "description": "The perfect chewy chocolate chip cookie.",
@@ -97,7 +96,7 @@
       "1/2 teaspoon salt",
       "1 1/2 cups chocolate chips"
     ],
-    "prep_time": "40 min",
+    "prep_time": "40 Minutes",
     "calories": 180
   }
 ]
