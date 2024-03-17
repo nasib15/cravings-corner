@@ -54,8 +54,8 @@ const Recipes = () => {
           preferences.
         </p>
       </div>
-      <div className="recipe-section-container flex gap-6">
-        <div className="w-[65%] grid grid-cols-2 gap-6">
+      <div className="recipe-section-container flex flex-col lg:flex-row gap-6">
+        <div className="lg:w-[65%] grid grid-cols-1 lg:grid-cols-2 gap-6">
           {recipes.map((recipe, index) => (
             <Recipe
               key={index}
@@ -71,7 +71,7 @@ const Recipes = () => {
             ></Recipe>
           ))}
         </div>
-        <div className="w-[35%]">
+        <div className="lg:w-[35%]">
           <Cooking
             cookings={cookings}
             handleCurrentlyCooking={handleCurrentlyCooking}

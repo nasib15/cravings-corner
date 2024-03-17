@@ -13,7 +13,7 @@ const Cooking = ({
       </h2>
       <div className="divider mx-12"></div>
       <div className="overflow-x-auto">
-        <table className="table -indent-0.5">
+        <table className="table lg:-indent-0.5">
           {/* head */}
           <thead className="text-center">
             <tr>
@@ -24,7 +24,7 @@ const Cooking = ({
             </tr>
           </thead>
           {cookings.map((cooking, index) => (
-            <tbody key={index} className="text-center">
+            <tbody key={index} className="text-center ">
               {/* row 1 */}
               <tr className="bg-base-200">
                 <th>{index + 1}</th>
@@ -36,7 +36,7 @@ const Cooking = ({
                     onClick={() =>
                       handleCurrentlyCooking(cooking, cooking.recipe_id)
                     }
-                    className="btn bg-[#0BE58A] font-medium rounded-3xl text-base border-none"
+                    className="btn bg-[#0BE58A] font-medium rounded-3xl text-base border-none "
                   >
                     Preparing
                   </button>
