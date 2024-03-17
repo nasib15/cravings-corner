@@ -29,31 +29,23 @@ const Recipes = () => {
       const newCookings = [...cookings, recipe];
       setCookings(newCookings);
     } else {
-      toast.warning("Already added to cookings");
+      toast.warning("Already added to the cookings");
     }
   };
 
   const handleCurrentlyCooking = (cooking, recipe_id) => {
-    const isExist = currentlyCooking.find(
-      (currentCooking) => cooking.recipe_id === currentCooking.recipe_id
-    );
+    setCurrentlyCooking([...currentlyCooking, cooking]);
 
     setCookings(cookings.filter((cooking) => cooking.recipe_id !== recipe_id));
 
-    if (!isExist) {
-      const newCurrentlyCookings = [...currentlyCooking, cooking];
-      setCurrentlyCooking(newCurrentlyCookings);
-    }
     setTotalTime(totalTime + parseInt(cooking.prep_time.split(" ")[0]));
     setTotalCalories(totalCalories + cooking.calories);
   };
 
-  // console.log(totalTime);
-
   return (
     <div className="my-24">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold">Our Recipes</h2>
+        <h2 className="text-4xl font-semibold">Our Recipes</h2>
         <p className="opacity-80 mt-6 mb-12">
           From appetizers to desserts, each recipe is expertly crafted with
           detailed instructions, ingredient lists, and pro tips to ensure

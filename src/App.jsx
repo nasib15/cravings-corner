@@ -5,7 +5,7 @@ import Recipes from "./components/Recipes/Recipes";
 
 function App() {
   return (
-    <div className="container mx-auto max-w-7xl w-[83%]">
+    <div className="container mx-auto max-w-[1320px] w-[83%] lexend">
       <header>
         <nav className="mb-14">
           <Navbar></Navbar>
