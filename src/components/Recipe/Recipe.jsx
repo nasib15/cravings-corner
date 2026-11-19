@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineFire } from "react-icons/ai";
 
